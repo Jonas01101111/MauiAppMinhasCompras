@@ -46,4 +46,9 @@ public partial class ListarProduto : ContentPage
 		string msg = $"O total é {soma:C}";
 		DisplayAlert("Total dos produtos",msg, "OK");
     }
+
+    private void MenuItem_Clicked(object sender, EventArgs e)
+    {
+		lst_produto.App.Db.Delete(e.)
+    }
 }

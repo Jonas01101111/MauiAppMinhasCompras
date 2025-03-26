@@ -26,10 +26,10 @@
                 <DataTemplate>
                     <ViewCell>
                         <ViewCell.ContextActions>
-                            <MenuItem Text="Remover"/>
+                            <MenuItem Text="Remover" Clicked="MenuItem_Clicked"/>
                         </ViewCell.ContextActions>
                         <Grid ColumnDefinitions="*, *, *, *, *, *" Padding="10" >
-                            <Label Text="{Binding Id}" Grid.Column="0"/>
+                            <Label x:Name="boundId" Text="{Binding Id}" Grid.Column="0"/>
                             <Label Text="{Binding Descricao}" Grid.Column="1"/>
                             <Label Text="{Binding Preco}" Grid.Column="2"/>
                             <Label Text="{Binding Quantidade}" Grid.Column="3"/>
